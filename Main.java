@@ -1,11 +1,8 @@
-import DataTypes.ArraysDemo;
 
 public class Main {
     public static void main(String[] args) {
-        ArraysDemo arraysDemo = new ArraysDemo();
-
-        for (int i = 0; i < arraysDemo.demoArray2.length; i++) {
-            System.out.println(arraysDemo.demoArray2[i]);
-        }
+        Student s1 = new Student("Yashas", 18);
+        System.out.println(s1.getName());
+        System.out.println(s1.getAge());
     }
 }
