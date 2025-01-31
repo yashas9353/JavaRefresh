@@ -19,4 +19,4 @@
 .vscode/
 
 #ignore .gitignore
-.gitignore
+*.gitignore
