@@ -33,6 +33,10 @@ public class Main {
 
         Collections.reverse(list);
 
+        Collections.sort(list, Comparator.reverseOrder());
+
+        System.out.println(Collections.frequency(list, 10));
+
         System.out.println(list);
     }
 }
