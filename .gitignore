@@ -17,6 +17,3 @@
 .idea/
 *.iml
 .vscode/
-
-#ignore .gitignore
-*.gitignore

@@ -1,7 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student("Yashas", 18);
-        System.out.println(s1.getName());
-        System.out.println(s1.getAge());
+        try {
+            Integer x = 10;
+            String y = String.valueOf(x);
+            System.out.println(y.getClass().getSimpleName());
+
+            enum Color {
+                RED, GREEN, BLUE;
+            }
+
+            System.out.println(Color.RED);
+
+            TestInterface obj = () -> {
+                System.out.println("Hello World!");
+            };
+
+            obj.hello();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
