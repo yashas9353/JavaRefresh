@@ -1,5 +1,12 @@
 public class Main {
 
+    public int findFactorial(int number) {
+        if (number == 1) {
+            return 1;
+        }
+        return number * findFactorial(number - 1);
+    }
+
     public boolean checkPrime(int number) {
         if (number <= 1) {
             return false;
@@ -45,5 +52,6 @@ public class Main {
         // main.extractDigit(12345);
         System.out.println(main.findGCD(9, 12));
         System.out.println(main.checkPrime(2));
+        System.out.println(main.findFactorial(5));
     }
 }
