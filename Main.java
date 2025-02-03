@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class Main {
 
     public int findFactorial(int number) {
@@ -48,11 +50,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Node n1 = new Node(10);
-        Node n2 = new Node(20);
-        Node n3 = new Node(30);
-        n3.next = n1;
-        n1.next = n2;
-        LinkedListBasicMethods.traverseList(n1);
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(10);
+        list.add(20);
+        System.out.println(list);
+        list.remove();
+        System.out.println(list);
+
+        // so LinkedList which is part of List interface inserts elemnt
+        // at the end of the list and removes element from the end of the list
     }
 }
