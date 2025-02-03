@@ -48,10 +48,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
-        // main.extractDigit(12345);
-        System.out.println(main.findGCD(9, 12));
-        System.out.println(main.checkPrime(2));
-        System.out.println(main.findFactorial(5));
+        Node n1 = new Node(10);
+        Node n2 = new Node(20);
+        Node n3 = new Node(30);
+        n3.next = n1;
+        n1.next = n2;
+        LinkedListBasicMethods.traverseList(n1);
     }
 }
