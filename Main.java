@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-
 public class Main {
 
     public int findFactorial(int number) {
@@ -51,21 +48,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>();
-        list.add(10);
-        list.add(20);
-        list.set(0, 15);
-        System.out.println(list);
-        list.remove();
-        System.out.println(list);
-
-        ArrayList<Integer> list1 = new ArrayList<>();
-        list1.add(10);
-        list1.remove(0);
-
-        // Note to be pointed = so for ArrayList we need to specify index to remove.
-
-        // so LinkedList which is part of List interface inserts elemnt
-        // at the end of the list and removes element from the end of the list
+        Node head = LinkedListBasicMethods.insertNodeAtBegin(null, 10);
+        Node newhead = LinkedListBasicMethods.insertNodeAtBegin(head, 20);
+        LinkedListBasicMethods.traverseList(newhead);
+        System.out.println(LinkedListBasicMethods.searchLinkedList(newhead, 15));
     }
 }
