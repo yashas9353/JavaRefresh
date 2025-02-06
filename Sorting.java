@@ -1,4 +1,5 @@
 public class Sorting {
+    // Selection Sort : select Min and Swap
     public static void selectionSort(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             int minIndex = i;
@@ -14,6 +15,7 @@ public class Sorting {
         }
     }
 
+    // Bubble Sort : push the max element to the end of the array by adjacent swaps.
     public static void bubbleSort(int[] nums) {
         int didSwap = 0;
         for (int i = 0; i < nums.length - 1; i++) {
@@ -32,6 +34,7 @@ public class Sorting {
         }
     }
 
+    // Insertion sort tip : get element and place it in its correct position.
     public static void insertionSort(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             int j = i;
