@@ -58,7 +58,7 @@ public class Sorting {
     }
 
     public static void merge(int[] nums, int low, int mid, int high) {
-        int[] temp = new int[high + 1];
+        int[] temp = new int[high - low + 1];
         int i = 0;
         int leftPointer = low;
         int rightPointer = mid + 1;
