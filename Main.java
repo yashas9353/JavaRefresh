@@ -51,7 +51,7 @@ public class Main {
 
     public static void main(String[] args) {
         int[] nums = { 5, 6, 1, 7, 2, 8, 4, 9 };
-        Sorting.insertionSort(nums);
+        Sorting.mergeSort(nums, 0, nums.length - 1);
         // Sorting.selectionSort(nums);
         System.out.println(Arrays.toString(nums));
     }

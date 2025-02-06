@@ -46,4 +46,39 @@ public class Sorting {
             }
         }
     }
+
+    public static void mergeSort(int[] nums, int low, int high) {
+        if (low >= high) {
+            return;
+        }
+        int mid = low + (high - low) / 2;
+        mergeSort(nums, low, mid);
+        mergeSort(nums, mid + 1, high);
+        merge(nums, low, mid, high);
+    }
+
+    public static void merge(int[] nums, int low, int mid, int high) {
+        int[] temp = new int[high + 1];
+        int i = 0;
+        int leftPointer = low;
+        int rightPointer = mid + 1;
+        while (leftPointer <= mid && rightPointer <= high) {
+            if (nums[leftPointer] <= nums[rightPointer]) {
+                temp[i++] = nums[leftPointer++];
+            } else {
+                temp[i++] = nums[rightPointer++];
+            }
+        }
+
+        while (leftPointer <= mid) {
+            temp[i++] = nums[leftPointer++];
+        }
+        while (rightPointer <= high) {
+            temp[i++] = nums[rightPointer++];
+        }
+
+        for (int j = low; j <= high; j++) {
+            nums[j] = temp[j - low];
+        }
+    }
 }
