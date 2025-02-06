@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     public int findFactorial(int number) {
@@ -48,9 +50,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Node head = LinkedListBasicMethods.insertNodeAtBegin(null, 10);
-        Node newhead = LinkedListBasicMethods.insertNodeAtBegin(head, 20);
-        LinkedListBasicMethods.traverseList(newhead);
-        System.out.println(LinkedListBasicMethods.searchLinkedList(newhead, 15));
+        int[] nums = { 5, 6, 1, 7, 2, 8, 4, 9 };
+        Sorting.insertionSort(nums);
+        // Sorting.selectionSort(nums);
+        System.out.println(Arrays.toString(nums));
     }
 }
