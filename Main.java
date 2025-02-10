@@ -50,9 +50,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] nums = { 5, 6, 1, 7, 2, 8, 4, 9 };
-        Sorting.mergeSort(nums, 0, nums.length - 1);
-        // Sorting.selectionSort(nums);
-        System.out.println(Arrays.toString(nums));
+        Node res = null;
+        res = LinkedListBasicMethods.insertNodeAtBegin(res, 10);
+        res = LinkedListBasicMethods.insertAtSpecificLocation(res, 5, 2);
+        res = LinkedListBasicMethods.insertAtSpecificLocation(res, 20, 2);
+        res = LinkedListBasicMethods.insertNodeAtEnd(res, 30);
+        LinkedListBasicMethods.traverseList(res);
     }
 }
