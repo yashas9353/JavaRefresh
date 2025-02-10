@@ -54,5 +54,9 @@ public class Main {
         res = LinkedListBasicMethods.insertAtSpecificLocation(res, 20, 2);
         res = LinkedListBasicMethods.insertNodeAtEnd(res, 30);
         LinkedListBasicMethods.traverseList(res);
+
+        int[] arr = { 1, 2, 3, 4, 5, 8, 10 };
+        int index = Searching.binarySearch(arr, 2);
+        System.out.println(index);
     }
 }
